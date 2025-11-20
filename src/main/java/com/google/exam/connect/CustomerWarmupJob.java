@@ -20,7 +20,7 @@ public class CustomerWarmupJob {
     }
 
     // Cứ 5s: nếu chưa đủ 300 khách thì tạo thêm 1
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 3000)
     public void warmup() throws ExecutionException, InterruptedException {
         List<Customer> all = customerService.getAll();
         int total = all.size();

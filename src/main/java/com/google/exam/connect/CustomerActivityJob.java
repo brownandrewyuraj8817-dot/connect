@@ -26,7 +26,7 @@ public class CustomerActivityJob {
     }
 
     // Cứ 5s chạy 1 lần
-    @Scheduled(fixedRate = 5000, initialDelay = 3000)
+    @Scheduled(fixedRate = 3000, initialDelay = 3000)
     public void activity() throws ExecutionException, InterruptedException {
         System.out.println("\n=== ACTIVITY JOB (5s) START ===");
 
